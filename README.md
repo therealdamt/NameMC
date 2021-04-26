@@ -121,5 +121,10 @@ public class APIUsage implements Listener {
 }
 ```
 
-***Credits***
+### Credits
+
+* [Telegram](https://t.me/therealdamt)
+* [Website](https://damt.xyz)
+* Discord: damt#0086
+
 This project was fully made by damt, you may **not** resell this product unless you changed something about it. You may **not** claim this proudct as your own.
