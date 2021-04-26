@@ -1,0 +1,14 @@
+name: Namemc
+version: ${project.version}
+main: xyz.damt.NameMC
+api-version: 1.16
+authors: [ damt ]
+description: NameMC plugin to register user/claim user's rewards
+website: https://damt.xyz
+commands:
+  namemc:
+    aliases: [verifyadmin, namemcadmin]
+    description: Do /namemc to view all help
+  verify:
+    aliases: [confirm, iliked, check]
+    description: Confirms that the user has liked

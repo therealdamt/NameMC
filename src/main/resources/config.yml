@@ -1,0 +1,47 @@
+messages:
+  no-permission: "&cYou do not have any permissions to execute this command!"
+  invalid-value: "&cThat is an invalid value!"
+  user:
+    has-liked: "&aThank you for liking our NameMC page! Here is you're rewards!"
+    already-liked: "&cWoops! Looks like you have already verified your like!"
+    did-not-like: "&cWoopsie! Looks like you did not like our page! Please like at https://namemc.com/server/example.net"
+  admin:
+    wrong-usage:
+      - "&6&lNameMC Verification Commands"
+      - "&7- &6/namemc remove <user>"
+      - "&7- &6/namemc status <user>"
+      - "&7- &6/namemc add <user>"
+      - "&7- &6/namemc removeall"
+      - "&7- &6/namemc list"
+    already-verified: "&cLooks like the user {user} is already verified!"
+    is-not-verified: "&cLooks like the user {user} is not verified!"
+    status-message: "&aLooks like the user {user} has {status}!"
+    remove-message: "&cYou have removed the user {user} from the verification list!"
+    add-message: "&aYou have added the user {user} to the verification list!"
+    remove-all-message: "&cYou have removed all users that have verified their likes!"
+    no-verifications: "&cThere are no verifications registered!"
+    list-message: "&aThe users of which have verified their like are: {users}"
+
+settings:
+  server-ip: "example.net" #server ip | https://namemc.com/server/example.net #It would be "example.net"
+  verify-command-permission: "verify.access"
+  namemc-command-permission: "admin.verify.access"
+  randomize-rewards: true
+  amount-of-rewards: 2
+
+rewards:
+  reward1:
+    item:
+      enabled: true
+      info: "DIRT:32:0:&cHi" #material:amount:data:name
+      lore:
+        - ""
+      enchants:
+        - ""
+    command:
+      enabled: true
+      commands:
+        - "give {player} dirt 1"
+
+data:
+  liked: {}
