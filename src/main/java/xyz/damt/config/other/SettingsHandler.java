@@ -10,7 +10,7 @@ public class SettingsHandler {
 
     public final String SERVER_IP;
     public final boolean RANDOMIZE_REWARDS;
-    public final boolean IS_MONGO_ENABLED;
+    public final boolean USE_PLACEHOLDER_API;
     public final int AMOUNT_OF_REWARDS;
 
     public final String VERIFY_COMMAND_PERMISSION;
@@ -21,7 +21,7 @@ public class SettingsHandler {
 
         this.SERVER_IP = fileConfiguration.getString("settings.server-ip");
         this.RANDOMIZE_REWARDS = fileConfiguration.getBoolean("settings.randomize-rewards");
-        this.IS_MONGO_ENABLED = fileConfiguration.getBoolean("settings.storage.mongo");
+        this.USE_PLACEHOLDER_API = fileConfiguration.getBoolean("settings.placeholder-api");
         this.AMOUNT_OF_REWARDS = fileConfiguration.getInt("settings.amount-of-rewards");
 
         this.VERIFY_COMMAND_PERMISSION = fileConfiguration.getString("settings.verify-command-permission");

@@ -24,6 +24,7 @@ messages:
 
 settings:
   server-ip: "example.net" #server ip | https://namemc.com/server/example.net #It would be "example.net"
+  placeholder-api: true
   verify-command-permission: "verify.access"
   namemc-command-permission: "admin.verify.access"
   randomize-rewards: true
