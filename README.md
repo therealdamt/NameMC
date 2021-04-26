@@ -1,15 +1,15 @@
 # NameMC
 
-**Description**
+***Description***
 NameMC is a plugin that hooks up to NameMC to get if a user liked or not and gives out rewards. 
 
-**Features**
+***Features***
 * Built-In API
 * Fully configurable
 * Flat file storage system
 * Fully optimized [All registrations and savings are done async]
 
-**API**
+***API***
 NameMC hook contains a fully awesome API that legit lets you do whatever you want! Some features can be seen below:
 * Custom Events
 * Custom API
@@ -17,7 +17,7 @@ NameMC hook contains a fully awesome API that legit lets you do whatever you wan
 
 Check out more of the API on the ``test`` package of the item! Or inside of the source code!
 
-**Config**
+***Config***
 ```yml
 messages:
   no-permission: "&cYou do not have any permissions to execute this command!"
@@ -68,7 +68,7 @@ data:
   liked: {}
 ```
 
-**API Example**
+***API Example***
 
 ```java
 public class APIUsage implements Listener {
@@ -120,3 +120,6 @@ public class APIUsage implements Listener {
     }
 }
 ```
+
+***Credits***
+This project was fully made by damt, you may **not** resell this product unless you changed something about it. You may **not** claim this proudct as your own.
