@@ -6,6 +6,7 @@ NameMC is a plugin that hooks up to NameMC to get if a user liked or not and giv
 ### Features
 * Built-In API
 * Fully configurable
+* PlaceHolderAPI Support
 * Flat file storage system
 * Fully optimized [All registrations and savings are done async]
 
