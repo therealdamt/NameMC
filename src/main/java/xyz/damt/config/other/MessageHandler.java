@@ -27,6 +27,7 @@ public class MessageHandler {
     public final String ADMIN_ALREADY_VERIFIED;
     public final String ADMIN_IS_NOT_VERIFIED;
     public final String ADMIN_NO_VERIFICATIONS;
+    public final String ADMIN_RELOAD_MESSAGE;
 
     public MessageHandler() {
         this.fileConfiguration = JavaPlugin.getPlugin(NameMC.class).getConfig();
@@ -35,7 +36,7 @@ public class MessageHandler {
         this.INVALID_VALUE = CC.translate(fileConfiguration.getString("messages.invalid-value"));
 
         this.USER_HAS_LIKED = CC.translate(fileConfiguration.getString("messages.user.has-liked"));
-        this.USER_DID_NOT_LIKE = CC.translate(fileConfiguration.getString("messages.user.did-not-liked"));
+        this.USER_DID_NOT_LIKE = CC.translate(fileConfiguration.getString("messages.user.did-not-like"));
         this.USER_ALREADY_LIKED = CC.translate(fileConfiguration.getString("messages.user.already-liked"));
 
         this.ADMIN_WRONG_USAGE = fileConfiguration.getStringList("messages.admin.wrong-usage");
@@ -47,6 +48,7 @@ public class MessageHandler {
         this.ADMIN_ALREADY_VERIFIED = CC.translate(fileConfiguration.getString("messages.admin.already-verified"));
         this.ADMIN_IS_NOT_VERIFIED = CC.translate(fileConfiguration.getString("messages.admin.is-not-verified"));
         this.ADMIN_NO_VERIFICATIONS = CC.translate(fileConfiguration.getString("messages.admin.no-verifications"));
+        this.ADMIN_RELOAD_MESSAGE = CC.translate(fileConfiguration.getString("messages.admin.reload-message"));
     }
 
 }

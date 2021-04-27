@@ -8,6 +8,9 @@ import xyz.damt.api.events.PlayerVerifyEvent;
 import xyz.damt.commands.framework.BaseCommand;
 import xyz.damt.request.Request;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class VerifyCommand extends BaseCommand {
 
     private final NameMC nameMC;
@@ -29,6 +32,9 @@ public class VerifyCommand extends BaseCommand {
             player.sendMessage(nameMC.getConfigHandler().getMessageHandler().USER_ALREADY_LIKED);
             return;
         }
+
+        nameMC.getLogger().log(Level.SEVERE, String.valueOf(request.hasLiked()));
+        nameMC.getLogger().log(Level.SEVERE, nameMC.getConfigHandler().getSettingsHandler().SERVER_IP);
 
         if (!request.hasLiked()) {
             player.sendMessage(nameMC.getConfigHandler().getMessageHandler().USER_DID_NOT_LIKE);

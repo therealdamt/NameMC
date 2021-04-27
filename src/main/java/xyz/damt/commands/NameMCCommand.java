@@ -19,6 +19,7 @@ public class NameMCCommand extends BaseCommand {
         this.getSubCommands().add(new AdminRemoveSubCommand());
         this.getSubCommands().add(new AdminListSubCommand());
         this.getSubCommands().add(new AdminRemoveAllSubCommand());
+        this.getSubCommands().add(new AdminReloadSubCommand());
 
         this.nameMC = JavaPlugin.getPlugin(NameMC.class);
         this.playerOnly = false;

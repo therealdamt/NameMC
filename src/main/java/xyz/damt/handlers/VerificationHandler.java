@@ -78,11 +78,7 @@ public class VerificationHandler {
                         stack.addUnsafeEnchantment(enchant, Integer.parseInt(args[1]));
                     });
                     stack.setItemMeta(meta);
-                    if (!Arrays.asList(player.getInventory().getStorageContents()).contains(null)) {
-                        player.getWorld().dropItemNaturally(player.getLocation(), stack);
-                    } else {
-                        player.getInventory().addItem(stack);
-                    }
+                    player.getInventory().addItem(stack);
                 }
 
                 if (nameMC.getConfig().getBoolean(path + "command.enabled")) {
@@ -119,11 +115,7 @@ public class VerificationHandler {
                             stack.addUnsafeEnchantment(enchant, Integer.parseInt(args[1]));
                         });
                         stack.setItemMeta(meta);
-                        if (!Arrays.asList(player.getInventory().getStorageContents()).contains(null)) {
-                            player.getWorld().dropItemNaturally(player.getLocation(), stack);
-                        } else {
-                            player.getInventory().addItem(stack);
-                        }
+                        player.getInventory().addItem(stack);
                     }
 
                     if (nameMC.getConfig().getBoolean(path + "command.enabled")) {
@@ -147,7 +139,7 @@ public class VerificationHandler {
     public void save() {
         newThread.execute(() -> {
             List<String> strings = new ArrayList<>();
-            likedUsers.forEach(uuid -> strings.add(likedUsers.toString()));
+            likedUsers.forEach(uuid -> strings.add(uuid.toString()));
             nameMC.getConfig().set("data.liked", strings);
             nameMC.saveConfig();
         });

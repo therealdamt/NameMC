@@ -1,4 +1,4 @@
-name: Namemc
+name: NameMC
 version: ${project.version}
 main: xyz.damt.NameMC
 api-version: 1.16
