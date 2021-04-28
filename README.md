@@ -34,7 +34,9 @@ messages:
       - "&7- &6/namemc status <user>"
       - "&7- &6/namemc add <user>"
       - "&7- &6/namemc removeall"
+      - "&7- &6/namemc reload"
       - "&7- &6/namemc list"
+    reload-message: "&7[&6&lNameMC&7] &aConfig Reloaded"
     already-verified: "&cLooks like the user {user} is already verified!"
     is-not-verified: "&cLooks like the user {user} is not verified!"
     status-message: "&aLooks like the user {user} has {status}!"
@@ -46,6 +48,7 @@ messages:
 
 settings:
   server-ip: "example.net" #server ip | https://namemc.com/server/example.net #It would be "example.net"
+  placeholder-api: true
   verify-command-permission: "verify.access"
   namemc-command-permission: "admin.verify.access"
   randomize-rewards: true
