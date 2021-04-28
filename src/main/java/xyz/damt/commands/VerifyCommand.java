@@ -33,9 +33,6 @@ public class VerifyCommand extends BaseCommand {
             return;
         }
 
-        nameMC.getLogger().log(Level.SEVERE, String.valueOf(request.hasLiked()));
-        nameMC.getLogger().log(Level.SEVERE, nameMC.getConfigHandler().getSettingsHandler().SERVER_IP);
-
         if (!request.hasLiked()) {
             player.sendMessage(nameMC.getConfigHandler().getMessageHandler().USER_DID_NOT_LIKE);
             return;

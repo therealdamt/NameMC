@@ -133,6 +133,7 @@ public class VerificationHandler {
         newThread.execute(() -> {
             likedUsers.clear();
             nameMC.getConfig().set("data.liked", null);
+            nameMC.saveConfig();
         });
     }
 
