@@ -44,11 +44,11 @@ public class VerificationHandler {
     }
 
     public void addUser(UUID uuid) {
-        newThread.execute(() -> likedUsers.add(uuid));
+       likedUsers.add(uuid);
     }
 
     public void removeUser(UUID uuid) {
-        newThread.execute(() -> likedUsers.remove(uuid));
+        likedUsers.remove(uuid);
     }
 
     public boolean containsUser(UUID uuid) {

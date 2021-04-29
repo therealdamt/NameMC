@@ -1,5 +1,6 @@
 package xyz.damt.commands;
 
+import jdk.jfr.internal.LogLevel;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -33,10 +34,12 @@ public class VerifyCommand extends BaseCommand {
             return;
         }
 
-        if (!request.hasLiked()) {
-            player.sendMessage(nameMC.getConfigHandler().getMessageHandler().USER_DID_NOT_LIKE);
-            return;
-        }
+        request.getAsyncThreadChecker().execute(() -> {
+            if (!request.hasLiked()) {
+                player.sendMessage(nameMC.getConfigHandler().getMessageHandler().USER_DID_NOT_LIKE);
+                return;
+            }
+        });
 
         nameMC.getServer().getPluginManager().callEvent(new PlayerVerifyEvent(player));
         nameMC.getVerificationHandler().addUser(player.getUniqueId());
